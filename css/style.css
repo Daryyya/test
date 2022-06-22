@@ -195,8 +195,8 @@ template {
   padding: 14px 18px;
   font-weight: 700;
   text-transform: uppercase;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .link:hover {
@@ -210,8 +210,8 @@ template {
   font-size: 14px;
   margin-right: 25px;
   text-transform: uppercase;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .header-menu .menu .menu-item:hover {
@@ -317,8 +317,8 @@ template {
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .header-phone .phone-wrapper .phone-number .number:hover {
