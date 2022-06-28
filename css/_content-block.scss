@@ -15,12 +15,12 @@
 	padding: 35px;
 
 
-	.card-img {
+	&__img {
 		display: flex;
 		justify-content: center;
 	}
 
-	.card-title {
+	&__title {
 		text-align: center;
 		color: #2C2C2C;
 		font-size: 20px;
@@ -31,7 +31,7 @@
 		}
 	}
 
-	.card-text {
+	&__text {
 		padding-top: 20px;
 		text-align: center;
 		color: #656363;
