@@ -181,6 +181,12 @@ template {
   display: flex;
 }
 
+.content-block__history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .card {
   font-family: "Tinos", serif;
   -webkit-box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
@@ -231,6 +237,96 @@ template {
 .card:hover {
   -webkit-box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.3);
           box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.3);
+}
+
+.history {
+  padding: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+
+.history__title {
+  font-size: 54px;
+  line-height: 62px;
+  color: #000;
+  font-family: "Tinos", serif;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.history__title .title-dec {
+  color: #D67E34;
+  font-family: "Tinos", serif;
+}
+
+.history__text {
+  color: #656363;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.history__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.history-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.history-img__item--bottom {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1 / span 8;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding-top: 20%;
+  z-index: 1;
+  display: block;
+  width: 100%;
+}
+
+.history-img__item--top {
+  grid-column: 4 / -1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: block;
+  width: 100%;
+}
+
+.number-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.number-box .number {
+  font-size: 40px;
+  line-height: 55px;
+  color: #a06637;
+  text-align: center;
+}
+
+.number-box .text {
+  text-align: center;
 }
 
 .body {

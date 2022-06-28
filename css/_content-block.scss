@@ -2,6 +2,10 @@
 	&__cards {
 		display: flex;
 	}
+
+	&__history {
+		display: flex;
+	}
 }
 
 
@@ -47,5 +51,78 @@
 
 	&:hover {
 		box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.3);
+	}
+}
+
+.history {
+	padding: 50px;
+	flex: 1 0;
+
+	&__title {
+		font-size: 54px;
+		line-height: 62px;
+		color: #000;
+		font-family: "Tinos", serif;
+		text-align: center;
+		padding-bottom: 20px;
+
+		.title-dec {
+			color: #D67E34;
+			font-family: "Tinos", serif;
+		}
+	}
+
+	&__text {
+		color: #656363;
+		font-size: 16px;
+		line-height: 22px;
+		font-family: "Open Sans", sans-serif;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	&__number {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+.history-img {
+	flex: 1 0;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	position: relative;
+
+	&__item--bottom {
+		grid-column: 1 / span 8;
+		grid-row: 1;
+		padding-top: 20%;
+		z-index: 1;
+		display: block;
+		width: 100%;
+
+	}
+
+	&__item--top {
+		grid-column: 4 / -1;
+		grid-row: 1;
+		display: block;
+		width: 100%;
+	}
+}
+
+.number-box {
+	display: flex;
+	flex-direction: column;
+
+	.number {
+		font-size: 40px;
+		line-height: 55px;
+		color: #a06637;
+		text-align: center;
+	}
+
+	.text {
+		text-align: center;
 	}
 }
