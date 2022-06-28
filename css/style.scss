@@ -1,10 +1,10 @@
-@import "./_null.SCSS";
-@import "./_content-block.SCSS";
-
-$background-color: #ff7400;
-$font-color: #fff;
+@import "./_null.scss";
+@import "./_content-block.scss";
 
 .body {
+	--orange: #ff7400;
+	--white: #fff;
+
 	margin: 0px;
 }
 
@@ -17,8 +17,8 @@ $font-color: #fff;
 	padding: 0px 30px;
 }
 .link {
-	background-color: $background-color;
-	color: $font-color;
+	background-color: var(--orange);
+	color: var(--white);
 	padding: 14px 18px;
 	font-weight: 700;
 	text-transform: uppercase;
